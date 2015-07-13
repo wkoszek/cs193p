@@ -1,5 +1,5 @@
 language: objective-c
 script: ./build.sh
 env:
-        BUILDTOOL=xcodebuild
-        BUILDTOOL=xctool
+        - BUILDTOOL=xcodebuild
+        - BUILDTOOL=xctool
