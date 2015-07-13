@@ -2,14 +2,14 @@ language: objective-c
 osx_image: xcode6.4
 script: ./build.sh
 env:
-        - BUILDTOOL=xcodebuild
-        - BUILDTOOL=xctool
-env:
   global:
-    DEPLOY_HOST=55a1cc835004460171000096@builds.koszek.com
-    DEPLOY_LOCATION=app-root/runtime/repo/
-    DEPLOY_KEY=9acbb13b487b
-    DEPLOY_FILE=travis_deploy/cs193p
+    - DEPLOY_HOST=55a1cc835004460171000096@builds.koszek.com
+    - DEPLOY_LOCATION=app-root/runtime/repo/
+    - DEPLOY_KEY=9acbb13b487b
+    - DEPLOY_FILE=travis_deploy/cs193p
+  matrix:
+    - BUILDTOOL=xcodebuild
+    - BUILDTOOL=xctool
 
 after_success:
 - make pack
