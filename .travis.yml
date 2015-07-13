@@ -1,0 +1,4 @@
+language: objective-c
+script:
+        - cd cs193p/
+        - xcodebuild -project cs193p.xcodeproj -target cs193p -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
