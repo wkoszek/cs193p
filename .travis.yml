@@ -1,4 +1,9 @@
 language: objective-c
 script:
         - cd cs193p/
-        - xcodebuild -project cs193p.xcodeproj -target cs193p -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+        - BUILDOPTS="-project cs193p.xcodeproj -scheme cs193p -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO"
+        - [ $BUILDTOOL = "xcodebuild" ] && xcodebuild $BUILDOPTS
+        - [ $BUILDTOOL = "xctool" ] && xctool $BUILDOPTS
+env:
+        BUILDTOOL=xcodebuild
+        BUILDTOOL=xctool
