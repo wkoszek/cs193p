@@ -5,7 +5,7 @@ TMPDIR=/tmp
 SRCS_ALL:=$(wildcard *.m)
 SRCS_EXCLUDED=
 SRCS=$(filter-out $(SRCS_EXCLUDED),$(SRCS_ALL))
-CFLAGS+=-Wall -pedantic
+CFLAGS+=-ObjC -Wall -pedantic
 
 all:	Card
 check:	$(MEMCHECKS)
@@ -24,7 +24,7 @@ pack:
 	cd $(TMPDIR) && tar cjf $(RELNAME).tar.bz2 $(RELNAME)
 
 clean:
-	rm -rf \
+	rm -rf	Card		\
 		*.prog		\
 		*.memcheck	\
 		*.dSYM		\
