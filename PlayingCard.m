@@ -16,7 +16,7 @@
 
 + (NSArray *) validSuits
 {
-	return @[@"H", @"D", @"V", @"T"];
+	return @[@"♠︎", @"♣︎", @"♥︎", @"♦︎"];
 }
 
 + (NSArray *) rankStrings
