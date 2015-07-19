@@ -40,13 +40,15 @@
 	return _matched;
 }
 
-- (int)match:(Card *)card
+- (int)match:(NSArray *)cards
 {
 	int score = 0;
 
-	if ([card.contents isEqualToString:self.contents]) {
-		score = 1;
-	}
+    for (Card *card in cards) {
+        if ([card.contents isEqualToString:self.contents]) {
+            score = 1;
+        }
+    }
 	return score;
 }
 
