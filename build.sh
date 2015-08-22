@@ -3,6 +3,10 @@
 
 BUILDOPTS="-project cs193p.xcodeproj -scheme cs193p -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO"
 
+if [ "x$1" != "x" ]; then
+	BUILDTOOL=$1
+fi
+
 if [ "x$BUILDTOOL" = "x" ]; then
 	echo "BUILDTOOL variable wasn't, assuming 'xcodebuild' (xcodebuild/xctool)"
 	BUILDTOOL=xcodebuild
