@@ -19,3 +19,8 @@ also supported as a build tool, in which case use:
 # TODO
 
 - TODO: Add tags to indicate which commit is which lesson.
+
+# Author
+
+- Wojciech Adam Koszek, [wojciech@koszek.com](mailto:wojciech@koszek.com)
+- [http://www.koszek.com](http://www.koszek.com)
