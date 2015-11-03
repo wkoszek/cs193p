@@ -20,6 +20,13 @@ also supported as a build tool, in which case use:
 
 - TODO: Add tags to indicate which commit is which lesson.
 
+# Copyright
+
+It's unclear to me how to handle the copyright of this code. I suspect
+it's a "public domain" code, since most of the stuff here came from the
+Stanford lecture available via YouTube and iTunes. In case it's not true,
+I indend to license it as BSD 2-clause code (see `COPYRIGHT.md`).
+
 # Author
 
 - Wojciech Adam Koszek, [wojciech@koszek.com](mailto:wojciech@koszek.com)
