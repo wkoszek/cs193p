@@ -1,5 +1,7 @@
 # Stanford's CS193p Class Source Code
 
+[![Build Status](https://travis-ci.org/wkoszek/cs193p.svg?branch=master)](https://travis-ci.org/wkoszek/cs193p)
+
 Source code is in the current directory.
 
 XCode project, which are more volatile than the `.h`
