@@ -74,7 +74,7 @@ static const int COST_TO_CHANGE = 1;
 
 - (Card *)cardAtIndex:(NSUInteger)index
 {
-    if (index > [self.cards count]) {
+    if (index >= [self.cards count]) {
         return nil;
     } else {
         return [self.cards objectAtIndex:index];
