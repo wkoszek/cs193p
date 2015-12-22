@@ -27,10 +27,16 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiZ-Y0-UoB">
                                 <rect key="frame" x="20" y="507" width="64" height="64"/>
                                 <state key="normal" title="Outline"/>
+                                <connections>
+                                    <action selector="outlineBodySelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAA-PP-9bm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J12-JU-aU1">
                                 <rect key="frame" x="337" y="524" width="66" height="30"/>
                                 <state key="normal" title="Unoutline"/>
+                                <connections>
+                                    <action selector="unoutlineBodySelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L02-VA-bL6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7z-0o-xXs">
                                 <rect key="frame" x="20" y="430" width="64" height="64"/>
