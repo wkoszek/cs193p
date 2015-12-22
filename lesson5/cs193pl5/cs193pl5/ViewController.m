@@ -9,6 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *body;
+@property (weak, nonatomic) IBOutlet UILabel *headline;
+@property (weak, nonatomic) IBOutlet UIButton *changeBody;
 
 @end
 
@@ -22,6 +25,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)changeBody:(id)sender {
+    UIButton *button = (UIButton *)sender;
+    NSLog(@"sender: %p", sender);
+
+    [self.body.textStorage addAttribute:NSForegroundColorAttributeName
+                                  value:button.backgroundColor
+                                  range:self.body.selectedRange];
 }
 
 @end
