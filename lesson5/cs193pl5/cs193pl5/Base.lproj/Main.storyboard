@@ -83,6 +83,7 @@
                         <outlet property="body" destination="QiS-gW-pwJ" id="olp-tS-EmY"/>
                         <outlet property="changeBody" destination="z7z-0o-xXs" id="zh8-KE-N3c"/>
                         <outlet property="headline" destination="oZN-eU-aDh" id="6Oi-Er-slO"/>
+                        <outlet property="outlineButton" destination="TiZ-Y0-UoB" id="cWn-0r-l2J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
