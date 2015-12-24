@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		571463D51B5B6E2900D34793 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 571463D41B5B6E2900D34793 /* CardMatchingGame.m */; };
+		57497A641C2C986C0080C4C3 /* PlayingCardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57497A631C2C986C0080C4C3 /* PlayingCardGameViewController.m */; };
 		5755AF0C1B532B5C00634C02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5755AF0B1B532B5C00634C02 /* main.m */; };
 		5755AF0F1B532B5C00634C02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5755AF0E1B532B5C00634C02 /* AppDelegate.m */; };
 		5755AF121B532B5C00634C02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5755AF111B532B5C00634C02 /* ViewController.m */; };
@@ -34,6 +35,8 @@
 /* Begin PBXFileReference section */
 		571463D31B5B6E2900D34793 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = ../../CardMatchingGame.h; sourceTree = "<group>"; };
 		571463D41B5B6E2900D34793 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = ../../CardMatchingGame.m; sourceTree = "<group>"; };
+		57497A621C2C986C0080C4C3 /* PlayingCardGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardGameViewController.h; sourceTree = "<group>"; };
+		57497A631C2C986C0080C4C3 /* PlayingCardGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardGameViewController.m; sourceTree = "<group>"; };
 		5755AF061B532B5C00634C02 /* cs193p.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cs193p.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5755AF0A1B532B5C00634C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5755AF0B1B532B5C00634C02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				5755AF0E1B532B5C00634C02 /* AppDelegate.m */,
 				5755AF101B532B5C00634C02 /* ViewController.h */,
 				5755AF111B532B5C00634C02 /* ViewController.m */,
+				57497A621C2C986C0080C4C3 /* PlayingCardGameViewController.h */,
+				57497A631C2C986C0080C4C3 /* PlayingCardGameViewController.m */,
 				5755AF131B532B5C00634C02 /* Main.storyboard */,
 				5755AF2F1B5344B300634C02 /* Card.h */,
 				5755AF301B5344B300634C02 /* Card.m */,
@@ -252,6 +257,7 @@
 				5755AF3A1B5344B300634C02 /* PlayingCardDeck.m in Sources */,
 				5755AF0C1B532B5C00634C02 /* main.m in Sources */,
 				5755AF371B5344B300634C02 /* Card.m in Sources */,
+				57497A641C2C986C0080C4C3 /* PlayingCardGameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,9 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -421,9 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = cs193pTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "wkoszek.$(PRODUCT_NAME:rfc1034identifier)";
