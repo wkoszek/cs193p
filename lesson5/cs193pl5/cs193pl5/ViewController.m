@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TextStatsViewController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *body;
@@ -53,6 +54,16 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:UIContentSizeCategoryDidChangeNotification
                                                   object:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"ShowStats"]) {
+        if ([[segue destinationViewController] isKindOfClass:[TextStatsViewController class]]) {
+            TextStatsViewController *tsvc = [segue destinationViewController];
+            tsvc.textToAnalyze = self.body.textStorage;
+        }
+    }
 }
 
 - (void)preferredFontsChanged:(NSNotification *)notification
