@@ -10,6 +10,25 @@
 
 @implementation PlayingCardView
 
+- (void) setSuit:(NSString *)suit
+{
+    _suit = suit;
+    [self setNeedsDisplay];
+}
+
+- (void) setRank:(NSUInteger)rank
+{
+    _rank = rank;
+    [self setNeedsDisplay];
+}
+
+- (void) setFaceUp:(BOOL)faceUp
+{
+
+    _faceUp = faceUp;
+    [self setNeedsDisplay];
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
