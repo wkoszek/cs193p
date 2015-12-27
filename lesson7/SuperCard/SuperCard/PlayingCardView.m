@@ -47,7 +47,30 @@
     [[UIColor blackColor] setStroke];
     [roundedRect stroke];
 
-    [self drawCorners];
+    if (self.faceUp) {
+        NSLog(@"running this guy");
+        NSString *cardName = [NSString stringWithFormat:@"%@%@", [self rankAsString], self.suit];
+        UIImage *faceImage = [UIImage imageNamed:cardName];
+
+        if (faceImage) {
+            NSLog(@"faceImage");
+            CGRect imageRect = CGRectInset(self.bounds,
+                                           self.bounds.size.width * 0.3 ,
+                                           self.bounds.size.height * 0.3);
+            [faceImage drawInRect:imageRect];
+        } else {
+            NSLog(@"drawPips");
+            [self drawPips];
+        }
+        [self drawCorners];
+    } else {
+        [[UIImage imageNamed:@"stanford"] drawInRect:self.bounds];
+    }
+}
+
+- (void)drawPips
+{
+
 }
 
 - (NSString *) rankAsString
