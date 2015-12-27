@@ -16,6 +16,18 @@
 
 @implementation ViewController
 
+- (IBAction)swipe:(UISwipeGestureRecognizer *)sender
+{
+
+    NSLog(@"swipe");
+    if ([sender direction] == UISwipeGestureRecognizerDirectionRight) {
+        NSLog(@"swipe right detected");
+        self.playingCardView.faceUp = !self.playingCardView.faceUp;
+    } else if ([sender direction] == UISwipeGestureRecognizerDirectionLeft) {
+        NSLog(@"swipe left detected");
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
