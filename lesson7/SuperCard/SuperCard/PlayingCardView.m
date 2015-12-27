@@ -31,6 +31,14 @@
     [self setNeedsDisplay];
 }
 
+- (void)pinch:(UIPinchGestureRecognizer *)gesture
+{
+    if ((gesture.state == UIGestureRecognizerStateChanged) ||
+            (gesture.state == UIGestureRecognizerStateEnded)) {
+        NSLog(@"pinch detected");
+    }
+}
+
 #pragma mark - Drawing
 
 // Only override drawRect: if you perform custom drawing.
