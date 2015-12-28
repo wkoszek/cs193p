@@ -12,6 +12,7 @@
 @property (strong, nonatomic) UIGravityBehavior *gravity;
 @property (strong, nonatomic) UICollisionBehavior *collider;
 @property (strong, nonatomic) UIDynamicItemBehavior *animationOptions;
+
 @end
 
 @implementation DropitBehavior

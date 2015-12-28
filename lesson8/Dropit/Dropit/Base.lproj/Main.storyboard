@@ -23,10 +23,12 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="nDH-Gu-k0B" appends="YES" id="P0g-gq-oDj"/>
+                                    <outletCollection property="gestureRecognizers" destination="lKT-Aa-sYM" appends="YES" id="igh-jK-W1R"/>
                                 </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                     </view>
                     <connections>
                         <outlet property="gameView" destination="916-u1-whM" id="kmD-BS-jwX"/>
@@ -38,8 +40,13 @@
                         <action selector="tap:" destination="BYZ-38-t0r" id="zod-M5-zAp"/>
                     </connections>
                 </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="lKT-Aa-sYM">
+                    <connections>
+                        <action selector="pan:" destination="BYZ-38-t0r" id="dDe-ra-P9v"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="305" y="367"/>
+            <point key="canvasLocation" x="863" y="829"/>
         </scene>
     </scenes>
 </document>
