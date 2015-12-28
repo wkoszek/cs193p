@@ -16,6 +16,7 @@
 		5728CFFA1C30E4340037AC02 /* DropitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5728CFF91C30E4340037AC02 /* DropitTests.m */; };
 		5728D0051C30E4340037AC02 /* DropitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5728D0041C30E4340037AC02 /* DropitUITests.m */; };
 		5728D0141C31109A0037AC02 /* DropitBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 5728D0131C3110990037AC02 /* DropitBehavior.m */; };
+		5728D0171C312B500037AC02 /* BezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5728D0161C312B500037AC02 /* BezierPathView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		5728D0061C30E4340037AC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5728D0121C3110990037AC02 /* DropitBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropitBehavior.h; sourceTree = "<group>"; };
 		5728D0131C3110990037AC02 /* DropitBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropitBehavior.m; sourceTree = "<group>"; };
+		5728D0151C312B500037AC02 /* BezierPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathView.h; sourceTree = "<group>"; };
+		5728D0161C312B500037AC02 /* BezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				5728D0121C3110990037AC02 /* DropitBehavior.h */,
 				5728D0131C3110990037AC02 /* DropitBehavior.m */,
 				5728CFE81C30E4340037AC02 /* Main.storyboard */,
+				5728D0151C312B500037AC02 /* BezierPathView.h */,
+				5728D0161C312B500037AC02 /* BezierPathView.m */,
 				5728CFEB1C30E4340037AC02 /* Assets.xcassets */,
 				5728CFED1C30E4340037AC02 /* LaunchScreen.storyboard */,
 				5728CFF01C30E4340037AC02 /* Info.plist */,
@@ -277,6 +282,7 @@
 			files = (
 				5728CFE71C30E4340037AC02 /* ViewController.m in Sources */,
 				5728D0141C31109A0037AC02 /* DropitBehavior.m in Sources */,
+				5728D0171C312B500037AC02 /* BezierPathView.m in Sources */,
 				5728CFE41C30E4340037AC02 /* AppDelegate.m in Sources */,
 				5728CFE11C30E4340037AC02 /* main.m in Sources */,
 			);
