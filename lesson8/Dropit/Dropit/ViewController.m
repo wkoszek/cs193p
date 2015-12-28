@@ -118,6 +118,14 @@ static const CGSize DROP_SIZE = { 40, 40 };
 {
     if (self.droppingView) {
         self.attachment = [[UIAttachmentBehavior alloc] initWithItem:self.droppingView attachedToAnchor:anchorPoint];
+        UIView *droppingView = self.droppingView;
+        __weak ViewController *weakSelf = self;
+        self.attachment.action = ^{
+            UIBezierPath *path = [UIBezierPath new];
+            [path moveToPoint:weakSelf.attachment.anchorPoint];
+            [path addLineToPoint:droppingView.center];
+            weakSelf.gameView.path = path;
+        };
         self.droppingView = nil;
         [self.animator addBehavior:self.attachment];
     }
