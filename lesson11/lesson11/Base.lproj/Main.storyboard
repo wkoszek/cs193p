@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--Flickr PhotoTVC-->
+        <!--Just Posted Flickr PhotosTVC-->
         <scene sceneID="fSP-LO-ykc">
             <objects>
-                <tableViewController id="54N-vJ-g1k" customClass="FlickrPhotoTVC" sceneMemberID="viewController">
+                <tableViewController id="54N-vJ-g1k" customClass="JustPostedFlickrPhotosTVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tFh-6c-iDo">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
