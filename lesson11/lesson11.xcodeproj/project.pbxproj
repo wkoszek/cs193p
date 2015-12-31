@@ -15,6 +15,7 @@
 		573CA08A1C34AE4300ED087E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573CA0881C34AE4300ED087E /* LaunchScreen.storyboard */; };
 		573CA0951C34AE4300ED087E /* lesson11Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 573CA0941C34AE4300ED087E /* lesson11Tests.m */; };
 		573CA0A01C34AE4300ED087E /* lesson11UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 573CA09F1C34AE4300ED087E /* lesson11UITests.m */; };
+		573CA0AF1C34AF3700ED087E /* FlickrPhotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 573CA0AE1C34AF3700ED087E /* FlickrPhotoTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		573CA09B1C34AE4300ED087E /* lesson11UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lesson11UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		573CA09F1C34AE4300ED087E /* lesson11UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lesson11UITests.m; sourceTree = "<group>"; };
 		573CA0A11C34AE4300ED087E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		573CA0AD1C34AF3700ED087E /* FlickrPhotoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoTVC.h; sourceTree = "<group>"; };
+		573CA0AE1C34AF3700ED087E /* FlickrPhotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoTVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				573CA0801C34AE4300ED087E /* ViewController.h */,
 				573CA0811C34AE4300ED087E /* ViewController.m */,
 				573CA0831C34AE4300ED087E /* Main.storyboard */,
+				573CA0AD1C34AF3700ED087E /* FlickrPhotoTVC.h */,
+				573CA0AE1C34AF3700ED087E /* FlickrPhotoTVC.m */,
 				573CA0861C34AE4300ED087E /* Assets.xcassets */,
 				573CA0881C34AE4300ED087E /* LaunchScreen.storyboard */,
 				573CA08B1C34AE4300ED087E /* Info.plist */,
@@ -271,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				573CA0821C34AE4300ED087E /* ViewController.m in Sources */,
+				573CA0AF1C34AF3700ED087E /* FlickrPhotoTVC.m in Sources */,
 				573CA07F1C34AE4300ED087E /* AppDelegate.m in Sources */,
 				573CA07C1C34AE4300ED087E /* main.m in Sources */,
 			);
