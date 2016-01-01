@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="1405" y="-152"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--ShutterBug-->
         <scene sceneID="VRN-Tg-vfa">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oO2-3R-zjO" sceneMemberID="viewController">
+                <navigationController title="ShutterBug" automaticallyAdjustsScrollViewInsets="NO" id="oO2-3R-zjO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LxW-35-d5k">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
