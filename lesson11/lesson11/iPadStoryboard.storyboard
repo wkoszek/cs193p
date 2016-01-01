@@ -61,6 +61,9 @@
                     <navigationItem key="navigationItem" title="ShutterBug" id="kuQ-Eg-BhD"/>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Hzo-Yc-USr">
                         <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="fetchPhotos" destination="PMW-BP-qw0" eventType="valueChanged" id="pob-bJ-rNg"/>
+                        </connections>
                     </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X0Q-Ou-w5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
