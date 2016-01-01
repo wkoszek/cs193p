@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57196ABC1C3670EB00456ECE /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57196ABB1C3670EB00456ECE /* iPadStoryboard.storyboard */; };
 		573CA07C1C34AE4300ED087E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 573CA07B1C34AE4300ED087E /* main.m */; };
 		573CA07F1C34AE4300ED087E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 573CA07E1C34AE4300ED087E /* AppDelegate.m */; };
 		573CA0821C34AE4300ED087E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573CA0811C34AE4300ED087E /* ViewController.m */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57196ABB1C3670EB00456ECE /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		573CA0771C34AE4300ED087E /* lesson11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lesson11.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		573CA07B1C34AE4300ED087E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		573CA07D1C34AE4300ED087E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,6 +116,8 @@
 		573CA0791C34AE4300ED087E /* lesson11 */ = {
 			isa = PBXGroup;
 			children = (
+				573CA0831C34AE4300ED087E /* Main.storyboard */,
+				57196ABB1C3670EB00456ECE /* iPadStoryboard.storyboard */,
 				573CA0BF1C3617F200ED087E /* ImageViewController.h */,
 				573CA0C01C3617F200ED087E /* ImageViewController.m */,
 				573CA0BB1C3606BC00ED087E /* FlickrAPIKey.h */,
@@ -123,7 +127,6 @@
 				573CA07E1C34AE4300ED087E /* AppDelegate.m */,
 				573CA0801C34AE4300ED087E /* ViewController.h */,
 				573CA0811C34AE4300ED087E /* ViewController.m */,
-				573CA0831C34AE4300ED087E /* Main.storyboard */,
 				573CA0AD1C34AF3700ED087E /* FlickrPhotoTVC.h */,
 				573CA0AE1C34AF3700ED087E /* FlickrPhotoTVC.m */,
 				573CA0B01C34B1C500ED087E /* JustPostedFlickrPhotosTVC.h */,
@@ -268,6 +271,7 @@
 				573CA08A1C34AE4300ED087E /* LaunchScreen.storyboard in Resources */,
 				573CA0871C34AE4300ED087E /* Assets.xcassets in Resources */,
 				573CA0851C34AE4300ED087E /* Main.storyboard in Resources */,
+				57196ABC1C3670EB00456ECE /* iPadStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +528,7 @@
 				573CA0A61C34AE4300ED087E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		573CA0A71C34AE4300ED087E /* Build configuration list for PBXNativeTarget "lesson11Tests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +537,7 @@
 				573CA0A91C34AE4300ED087E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		573CA0AA1C34AE4300ED087E /* Build configuration list for PBXNativeTarget "lesson11UITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +546,7 @@
 				573CA0AC1C34AE4300ED087E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
