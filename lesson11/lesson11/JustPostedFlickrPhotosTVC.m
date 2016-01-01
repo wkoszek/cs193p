@@ -7,6 +7,7 @@
 //
 
 #import "JustPostedFlickrPhotosTVC.h"
+#import "FlickrFetcher.h"
 
 @interface JustPostedFlickrPhotosTVC ()
 
@@ -16,12 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self fetchPhotos];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)fetchPhotos
+{
+    NSURL *url = [FlickrFetcher URLforRecentGeoreferencedPhotos];
+    NSData *jsonResults = [NSData dataWithContentsOfURL:url];
+
+    self.photos = nil;
 }
 
 /*
