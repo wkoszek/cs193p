@@ -7,6 +7,7 @@
 //
 
 #import "FlickrPhotoTVC.h"
+#import "FlickrFetcher.h"
 
 @interface FlickrPhotoTVC ()
 
@@ -28,6 +29,18 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.photos count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellId = @"Flickr Photo Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
+
+    NSDictionary *photo = self.photos[indexPath.row];
+    cell.textLabel.text = [photo valueForKeyPath:FLICKR_PHOTO_TITLE];
+    cell.detailTextLabel.text = [photo valueForKeyPath:FLICKR_PHOTO_DESCRIPTION];
+
+    return cell;
 }
 
 /*
