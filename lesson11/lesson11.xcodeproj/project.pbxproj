@@ -17,6 +17,7 @@
 		573CA0A01C34AE4300ED087E /* lesson11UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 573CA09F1C34AE4300ED087E /* lesson11UITests.m */; };
 		573CA0AF1C34AF3700ED087E /* FlickrPhotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 573CA0AE1C34AF3700ED087E /* FlickrPhotoTVC.m */; };
 		573CA0B21C34B1C500ED087E /* JustPostedFlickrPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 573CA0B11C34B1C500ED087E /* JustPostedFlickrPhotosTVC.m */; };
+		573CA0BE1C3606BC00ED087E /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 573CA0BD1C3606BC00ED087E /* FlickrFetcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,9 @@
 		573CA0AE1C34AF3700ED087E /* FlickrPhotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoTVC.m; sourceTree = "<group>"; };
 		573CA0B01C34B1C500ED087E /* JustPostedFlickrPhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JustPostedFlickrPhotosTVC.h; sourceTree = "<group>"; };
 		573CA0B11C34B1C500ED087E /* JustPostedFlickrPhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JustPostedFlickrPhotosTVC.m; sourceTree = "<group>"; };
+		573CA0BB1C3606BC00ED087E /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
+		573CA0BC1C3606BC00ED087E /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
+		573CA0BD1C3606BC00ED087E /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,9 @@
 		573CA0791C34AE4300ED087E /* lesson11 */ = {
 			isa = PBXGroup;
 			children = (
+				573CA0BB1C3606BC00ED087E /* FlickrAPIKey.h */,
+				573CA0BC1C3606BC00ED087E /* FlickrFetcher.h */,
+				573CA0BD1C3606BC00ED087E /* FlickrFetcher.m */,
 				573CA07D1C34AE4300ED087E /* AppDelegate.h */,
 				573CA07E1C34AE4300ED087E /* AppDelegate.m */,
 				573CA0801C34AE4300ED087E /* ViewController.h */,
@@ -284,6 +291,7 @@
 				573CA0821C34AE4300ED087E /* ViewController.m in Sources */,
 				573CA0AF1C34AF3700ED087E /* FlickrPhotoTVC.m in Sources */,
 				573CA07F1C34AE4300ED087E /* AppDelegate.m in Sources */,
+				573CA0BE1C3606BC00ED087E /* FlickrFetcher.m in Sources */,
 				573CA07C1C34AE4300ED087E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
