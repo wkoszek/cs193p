@@ -44,6 +44,16 @@
     return cell;
 }
 
+#pragma mark - asd
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    id details = self.splitViewController.viewControllers[1];
+    if ([details isKindOfClass:[ImageViewController class]]) {
+        [self prepareImageViewController:details toDisplayPhoto:self.photos[indexPath.row]];
+    }
+}
+
 #pragma mark - Navigation
 
 - (void)prepareImageViewController:(ImageViewController *)ivc toDisplayPhoto:(NSDictionary *)photo
