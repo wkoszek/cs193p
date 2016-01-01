@@ -49,8 +49,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     id details = self.splitViewController.viewControllers[1];
+
+
+    if ([details isKindOfClass:[UINavigationController class]]) {
+        details = [((UINavigationController *)details).viewControllers firstObject];
+    }
     if ([details isKindOfClass:[ImageViewController class]]) {
-        [self prepareImageViewController:details toDisplayPhoto:self.photos[indexPath.row]];
+         [self prepareImageViewController:details toDisplayPhoto:self.photos[indexPath.row]];
     }
 }
 

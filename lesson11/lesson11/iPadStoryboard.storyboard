@@ -12,7 +12,7 @@
                 <splitViewController id="a9R-XF-i9W" sceneMemberID="viewController">
                     <connections>
                         <segue destination="oO2-3R-zjO" kind="relationship" relationship="masterViewController" id="Bkj-A2-LQQ"/>
-                        <segue destination="exh-qT-2Nw" kind="relationship" relationship="detailViewController" id="kwj-Wk-UCh"/>
+                        <segue destination="c5I-0M-cJf" kind="relationship" relationship="detailViewController" id="kwj-Wk-UCh"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hiy-d6-Aon" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -94,7 +94,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwJ-CZ-eAs">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lwJ-CZ-eAs">
                                 <rect key="frame" x="20" y="28" width="560" height="552"/>
                             </scrollView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="TKa-7G-iPj">
@@ -112,12 +112,31 @@
                             <constraint firstItem="lwJ-CZ-eAs" firstAttribute="trailing" secondItem="938-8m-SYq" secondAttribute="trailingMargin" id="kCE-fs-T5c"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="QSj-wm-oIi"/>
                     <connections>
                         <outlet property="scrollView" destination="lwJ-CZ-eAs" id="ifl-0i-qep"/>
                         <outlet property="spinner" destination="TKa-7G-iPj" id="Kc5-Bx-G2D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ipm-nj-Sft" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1602" y="1008"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dm6-rN-sdf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c5I-0M-cJf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jdb-jP-XTf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="exh-qT-2Nw" kind="relationship" relationship="rootViewController" id="rbT-Hb-olB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AD1-y6-sgN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="790" y="1008"/>
         </scene>
