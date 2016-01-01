@@ -20,8 +20,10 @@
     [self fetchPhotos];
 }
 
-- (void)fetchPhotos
+- (IBAction)fetchPhotos
 {
+
+    [self.refreshControl beginRefreshing];
     NSURL *url = [FlickrFetcher URLforRecentGeoreferencedPhotos];
 
     dispatch_queue_t fetchQ = dispatch_queue_create("flickr", NULL);
@@ -35,7 +37,9 @@
 
         dispatch_async(dispatch_get_main_queue(), ^{
             self.photos = photos;
+            [self.refreshControl endRefreshing];
         });
+
     });
 
 }
