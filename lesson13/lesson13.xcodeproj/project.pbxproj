@@ -15,6 +15,12 @@
 		574B71E91C3925C6002BF726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574B71E71C3925C6002BF726 /* LaunchScreen.storyboard */; };
 		574B71F41C3925C6002BF726 /* lesson13Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B71F31C3925C6002BF726 /* lesson13Tests.m */; };
 		574B71FF1C3925C6002BF726 /* lesson13UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B71FE1C3925C6002BF726 /* lesson13UITests.m */; };
+		574B720E1C392636002BF726 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 574B720C1C392636002BF726 /* Model.xcdatamodeld */; };
+		574B722A1C39273E002BF726 /* Photo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B72231C39273E002BF726 /* Photo+CoreDataProperties.m */; };
+		574B722B1C39273E002BF726 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B72251C39273E002BF726 /* Photo.m */; };
+		574B722C1C39273E002BF726 /* Photographer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B72271C39273E002BF726 /* Photographer+CoreDataProperties.m */; };
+		574B722D1C39273E002BF726 /* Photographer.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B72291C39273E002BF726 /* Photographer.m */; };
+		574B72301C3927FF002BF726 /* Photo+Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B722F1C3927FF002BF726 /* Photo+Flickr.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,17 @@
 		574B71FA1C3925C6002BF726 /* lesson13UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lesson13UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		574B71FE1C3925C6002BF726 /* lesson13UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lesson13UITests.m; sourceTree = "<group>"; };
 		574B72001C3925C6002BF726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		574B720D1C392636002BF726 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		574B72221C39273E002BF726 /* Photo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		574B72231C39273E002BF726 /* Photo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		574B72241C39273E002BF726 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		574B72251C39273E002BF726 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		574B72261C39273E002BF726 /* Photographer+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photographer+CoreDataProperties.h"; sourceTree = "<group>"; };
+		574B72271C39273E002BF726 /* Photographer+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photographer+CoreDataProperties.m"; sourceTree = "<group>"; };
+		574B72281C39273E002BF726 /* Photographer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photographer.h; sourceTree = "<group>"; };
+		574B72291C39273E002BF726 /* Photographer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photographer.m; sourceTree = "<group>"; };
+		574B722E1C3927FF002BF726 /* Photo+Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photo+Flickr.h"; sourceTree = "<group>"; };
+		574B722F1C3927FF002BF726 /* Photo+Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photo+Flickr.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +98,16 @@
 		574B71CD1C3925C6002BF726 = {
 			isa = PBXGroup;
 			children = (
+				574B72221C39273E002BF726 /* Photo+CoreDataProperties.h */,
+				574B72231C39273E002BF726 /* Photo+CoreDataProperties.m */,
+				574B72241C39273E002BF726 /* Photo.h */,
+				574B72251C39273E002BF726 /* Photo.m */,
+				574B72261C39273E002BF726 /* Photographer+CoreDataProperties.h */,
+				574B722E1C3927FF002BF726 /* Photo+Flickr.h */,
+				574B722F1C3927FF002BF726 /* Photo+Flickr.m */,
+				574B72271C39273E002BF726 /* Photographer+CoreDataProperties.m */,
+				574B72281C39273E002BF726 /* Photographer.h */,
+				574B72291C39273E002BF726 /* Photographer.m */,
 				574B71D81C3925C6002BF726 /* lesson13 */,
 				574B71F21C3925C6002BF726 /* lesson13Tests */,
 				574B71FD1C3925C6002BF726 /* lesson13UITests */,
@@ -103,6 +130,7 @@
 			children = (
 				574B71DC1C3925C6002BF726 /* AppDelegate.h */,
 				574B71DD1C3925C6002BF726 /* AppDelegate.m */,
+				574B720C1C392636002BF726 /* Model.xcdatamodeld */,
 				574B71DF1C3925C6002BF726 /* ViewController.h */,
 				574B71E01C3925C6002BF726 /* ViewController.m */,
 				574B71E21C3925C6002BF726 /* Main.storyboard */,
@@ -273,9 +301,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				574B722B1C39273E002BF726 /* Photo.m in Sources */,
 				574B71E11C3925C6002BF726 /* ViewController.m in Sources */,
 				574B71DE1C3925C6002BF726 /* AppDelegate.m in Sources */,
 				574B71DB1C3925C6002BF726 /* main.m in Sources */,
+				574B722D1C39273E002BF726 /* Photographer.m in Sources */,
+				574B720E1C392636002BF726 /* Model.xcdatamodeld in Sources */,
+				574B72301C3927FF002BF726 /* Photo+Flickr.m in Sources */,
+				574B722A1C39273E002BF726 /* Photo+CoreDataProperties.m in Sources */,
+				574B722C1C39273E002BF726 /* Photographer+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +553,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		574B720C1C392636002BF726 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				574B720D1C392636002BF726 /* Model.xcdatamodel */,
+			);
+			currentVersion = 574B720D1C392636002BF726 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 574B71CE1C3925C6002BF726 /* Project object */;
 }
