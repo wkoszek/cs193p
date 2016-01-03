@@ -23,6 +23,7 @@
 		574B72301C3927FF002BF726 /* Photo+Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B722F1C3927FF002BF726 /* Photo+Flickr.m */; };
 		574B723A1C39E23D002BF726 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B72391C39E23D002BF726 /* FlickrFetcher.m */; };
 		574B723D1C39E525002BF726 /* Photographer+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B723C1C39E525002BF726 /* Photographer+Create.m */; };
+		574B72431C39EA14002BF726 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B72421C39EA14002BF726 /* CoreDataTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		574B72391C39E23D002BF726 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
 		574B723B1C39E525002BF726 /* Photographer+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photographer+Create.h"; sourceTree = "<group>"; };
 		574B723C1C39E525002BF726 /* Photographer+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photographer+Create.m"; sourceTree = "<group>"; };
+		574B72411C39EA14002BF726 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		574B72421C39EA14002BF726 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,7 @@
 		574B71D81C3925C6002BF726 /* lesson13 */ = {
 			isa = PBXGroup;
 			children = (
+				574B72401C39EA14002BF726 /* CoreDataTableViewController */,
 				574B71DC1C3925C6002BF726 /* AppDelegate.h */,
 				574B71DD1C3925C6002BF726 /* AppDelegate.m */,
 				574B720C1C392636002BF726 /* Model.xcdatamodeld */,
@@ -178,6 +182,15 @@
 				574B72001C3925C6002BF726 /* Info.plist */,
 			);
 			path = lesson13UITests;
+			sourceTree = "<group>";
+		};
+		574B72401C39EA14002BF726 /* CoreDataTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				574B72411C39EA14002BF726 /* CoreDataTableViewController.h */,
+				574B72421C39EA14002BF726 /* CoreDataTableViewController.m */,
+			);
+			path = CoreDataTableViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +328,7 @@
 			files = (
 				574B723D1C39E525002BF726 /* Photographer+Create.m in Sources */,
 				574B722B1C39273E002BF726 /* Photo.m in Sources */,
+				574B72431C39EA14002BF726 /* CoreDataTableViewController.m in Sources */,
 				574B71E11C3925C6002BF726 /* ViewController.m in Sources */,
 				574B71DE1C3925C6002BF726 /* AppDelegate.m in Sources */,
 				574B71DB1C3925C6002BF726 /* main.m in Sources */,
@@ -549,6 +563,7 @@
 				574B72051C3925C6002BF726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		574B72061C3925C6002BF726 /* Build configuration list for PBXNativeTarget "lesson13Tests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +572,7 @@
 				574B72081C3925C6002BF726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		574B72091C3925C6002BF726 /* Build configuration list for PBXNativeTarget "lesson13UITests" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +581,7 @@
 				574B720B1C3925C6002BF726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
