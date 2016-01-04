@@ -47,7 +47,7 @@
 - (NSManagedObjectModel *)createManagedObjectModel
 {
     NSManagedObjectModel *managedObjectModel = nil;
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Photomania" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Model" withExtension:@"momd"];
     managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return managedObjectModel;
 }
