@@ -30,7 +30,7 @@
     } else if ([matches count]) {
         photo = [matches firstObject];
     } else {
-        photo = [NSEntityDescription insertNewObjectForEntityForName:@"Photos"
+        photo = [NSEntityDescription insertNewObjectForEntityForName:@"Photo"
                                               inManagedObjectContext:context];
         photo.unique = unique;
         photo.title = [photoDictionary valueForKey:FLICKR_PHOTO_TITLE];
