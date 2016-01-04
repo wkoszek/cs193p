@@ -10,6 +10,7 @@
 #import "PhotomaniaAppDelegate+MOC.h"
 #import "FlickrFetcher.h"
 #import "Photo+Flickr.h"
+#import "PhotoDatabaseAvailability.h"
 
 @interface AppDelegate () <NSURLSessionDownloadDelegate>
 @property (copy, nonatomic) void (^flickrDownloadBackgroundURLSessionCompletionHandler)();
@@ -103,6 +104,19 @@ totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite
 - (void)flickrDownloadTasksMightBeComplete
 {
 
+}
+
+- (void)setPhotoDatabaseContext:(NSManagedObjectContext *)photoDatabaseContext
+{
+
+    _photoDatabaseContext = photoDatabaseContext;
+    NSDictionary *userInfo =
+            self.photoDatabaseContext                                         ?
+            @{ PhotoDatabaseAvailabilityContext : self.photoDatabaseContext } : nil;
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:PhotoDatabaseAvailabilityNotification
+                                                        object:self
+                                                      userInfo:userInfo];
 }
 
 @end

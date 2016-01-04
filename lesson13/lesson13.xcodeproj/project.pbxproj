@@ -84,6 +84,7 @@
 		574B72451C39EB16002BF726 /* PhotographersCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotographersCDTVC.m; path = lesson13/PhotographersCDTVC.m; sourceTree = "<group>"; };
 		574B72471C39F510002BF726 /* PhotomaniaAppDelegate+MOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PhotomaniaAppDelegate+MOC.h"; sourceTree = "<group>"; };
 		574B72481C39F510002BF726 /* PhotomaniaAppDelegate+MOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PhotomaniaAppDelegate+MOC.m"; sourceTree = "<group>"; };
+		574B724A1C39FDC8002BF726 /* PhotoDatabaseAvailability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PhotoDatabaseAvailability.h; path = ../PhotoDatabaseAvailability.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +154,7 @@
 		574B71D81C3925C6002BF726 /* lesson13 */ = {
 			isa = PBXGroup;
 			children = (
+				574B724A1C39FDC8002BF726 /* PhotoDatabaseAvailability.h */,
 				574B72401C39EA14002BF726 /* CoreDataTableViewController */,
 				574B71DC1C3925C6002BF726 /* AppDelegate.h */,
 				574B71DD1C3925C6002BF726 /* AppDelegate.m */,
