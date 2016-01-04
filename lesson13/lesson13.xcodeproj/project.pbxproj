@@ -273,6 +273,11 @@
 					574B71D51C3925C6002BF726 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 3DHC3EAFWW;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					574B71EE1C3925C6002BF726 = {
 						CreatedOnToolsVersion = 7.2;
