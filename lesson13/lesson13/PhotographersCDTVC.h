@@ -10,4 +10,6 @@
 
 @interface PhotographersCDTVC : CoreDataTableViewController
 
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+
 @end
