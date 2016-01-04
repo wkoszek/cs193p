@@ -25,6 +25,7 @@
 		574B723D1C39E525002BF726 /* Photographer+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B723C1C39E525002BF726 /* Photographer+Create.m */; };
 		574B72431C39EA14002BF726 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B72421C39EA14002BF726 /* CoreDataTableViewController.m */; };
 		574B72461C39EB16002BF726 /* PhotographersCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B72451C39EB16002BF726 /* PhotographersCDTVC.m */; };
+		574B72491C39F510002BF726 /* PhotomaniaAppDelegate+MOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B72481C39F510002BF726 /* PhotomaniaAppDelegate+MOC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,8 @@
 		574B72421C39EA14002BF726 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
 		574B72441C39EB16002BF726 /* PhotographersCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotographersCDTVC.h; path = lesson13/PhotographersCDTVC.h; sourceTree = "<group>"; };
 		574B72451C39EB16002BF726 /* PhotographersCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotographersCDTVC.m; path = lesson13/PhotographersCDTVC.m; sourceTree = "<group>"; };
+		574B72471C39F510002BF726 /* PhotomaniaAppDelegate+MOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PhotomaniaAppDelegate+MOC.h"; sourceTree = "<group>"; };
+		574B72481C39F510002BF726 /* PhotomaniaAppDelegate+MOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PhotomaniaAppDelegate+MOC.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 		574B71CD1C3925C6002BF726 = {
 			isa = PBXGroup;
 			children = (
+				574B72471C39F510002BF726 /* PhotomaniaAppDelegate+MOC.h */,
+				574B72481C39F510002BF726 /* PhotomaniaAppDelegate+MOC.m */,
 				574B72441C39EB16002BF726 /* PhotographersCDTVC.h */,
 				574B72451C39EB16002BF726 /* PhotographersCDTVC.m */,
 				574B723B1C39E525002BF726 /* Photographer+Create.h */,
@@ -343,6 +348,7 @@
 				574B72301C3927FF002BF726 /* Photo+Flickr.m in Sources */,
 				574B722A1C39273E002BF726 /* Photo+CoreDataProperties.m in Sources */,
 				574B723A1C39E23D002BF726 /* FlickrFetcher.m in Sources */,
+				574B72491C39F510002BF726 /* PhotomaniaAppDelegate+MOC.m in Sources */,
 				574B722C1C39273E002BF726 /* Photographer+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
