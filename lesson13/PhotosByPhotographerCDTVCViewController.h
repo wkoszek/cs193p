@@ -7,7 +7,10 @@
 //
 
 #import "CoreDataTableViewController.h"
+#import "Photographer.h"
 
 @interface PhotosByPhotographerCDTVCViewController : CoreDataTableViewController
+
+@property (nonatomic, strong) Photographer *photographer;
 
 @end
