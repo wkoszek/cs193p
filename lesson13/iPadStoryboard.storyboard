@@ -187,7 +187,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="AMt-HD-kxk"/>
                     <connections>
-                        <segue destination="7BH-2z-rVJ" kind="show" id="dyn-Ut-fzC"/>
+                        <segue destination="7BH-2z-rVJ" kind="show" identifier="Show Photos by Photographer" id="dyn-Ut-fzC"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hd1-o8-hgP" userLabel="First Responder" sceneMemberID="firstResponder"/>
