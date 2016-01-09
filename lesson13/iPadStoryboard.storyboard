@@ -118,7 +118,15 @@
                             <constraint firstItem="rrw-Iq-qhJ" firstAttribute="centerX" secondItem="0gT-hx-mds" secondAttribute="centerX" id="mDC-Uj-kzA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="KlZ-ee-uKA"/>
+                    <navigationItem key="navigationItem" id="KlZ-ee-uKA">
+                        <barButtonItem key="rightBarButtonItem" title="URL" id="skm-ur-lU4">
+                            <connections>
+                                <segue destination="0T3-gY-GQf" kind="popoverPresentation" identifier="Show URL" popoverAnchorBarButtonItem="skm-ur-lU4" id="jp8-8j-0aj">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="scrollView" destination="AiE-53-F3B" id="erC-HM-F69"/>
                         <outlet property="spinner" destination="rrw-Iq-qhJ" id="LfU-ej-tHU"/>
@@ -127,6 +135,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTE-3X-g0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1317" y="1432"/>
+        </scene>
+        <!--URL View Controller-->
+        <scene sceneID="3mF-ZQ-lei">
+            <objects>
+                <viewController id="0T3-gY-GQf" customClass="URLViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g4S-0v-y6C"/>
+                        <viewControllerLayoutGuide type="bottom" id="kWo-CK-U3W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xOd-tf-6cY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="http://www.stanford.edu" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="thT-FV-bS5">
+                                <rect key="frame" x="0.0" y="0.0" width="595" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="thT-FV-bS5" firstAttribute="bottom" secondItem="kWo-CK-U3W" secondAttribute="top" id="5tw-Vm-fA6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="thT-FV-bS5" secondAttribute="trailing" constant="-15" id="9RI-m5-ldV"/>
+                            <constraint firstItem="thT-FV-bS5" firstAttribute="leading" secondItem="xOd-tf-6cY" secondAttribute="leading" id="GTd-N0-tUW"/>
+                            <constraint firstItem="thT-FV-bS5" firstAttribute="top" secondItem="xOd-tf-6cY" secondAttribute="top" id="qcV-Tu-9ua"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="urlTextView" destination="thT-FV-bS5" id="4s3-uv-4Th"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6aw-AX-NmW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1995" y="1346"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pkZ-Iz-EHA">
