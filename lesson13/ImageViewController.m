@@ -7,12 +7,14 @@
 //
 
 #import "ImageViewController.h"
+#import "URLViewController.h"
 
 @interface ImageViewController () <UIScrollViewDelegate, UISplitViewControllerDelegate>
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UIImage *image;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
+@property (weak, nonatomic) UIPopoverController *urlPopoverController;
 @end
 
 @implementation ImageViewController
@@ -121,14 +123,24 @@
     self.navigationItem.leftBarButtonItem = nil;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([[segue destinationViewController] isKindOfClass:[URLViewController class]]) {
+        URLViewController *uvc = (URLViewController *)segue.destinationViewController;
+        if ([segue isKindOfClass:[UIStoryboardPopoverSegue class]]) {
+            UIStoryboardPopoverSegue *popoverSegue = (UIStoryboardPopoverSegue *)segue;
+            self.urlPopoverController = popoverSegue.popoverController;
+        }
+        uvc.url = self.imageURL;
+    }
 }
-*/
+
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    if ([identifier isEqualToString:@"Show URL"]) {
+        return self.popoverPresentationController ? NO : (self.imageURL ? YES : NO);
+    } else {
+        return [super shouldPerformSegueWithIdentifier:identifier sender:sender];
+    }
+}
 
 @end
