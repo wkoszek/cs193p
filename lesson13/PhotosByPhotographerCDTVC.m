@@ -6,10 +6,10 @@
 //  Copyright © 2016 Wojciech Koszek (home). All rights reserved.
 //
 
-#import "PhotosByPhotographerCDTVCViewController.h"
+#import "PhotosByPhotographerCDTVC.h"
 
 
-@implementation PhotosByPhotographerCDTVCViewController
+@implementation PhotosByPhotographerCDTVC
 
 - (void)setPhotographer:(Photographer *)photographer
 {

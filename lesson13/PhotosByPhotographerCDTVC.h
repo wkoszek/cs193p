@@ -6,10 +6,10 @@
 //  Copyright © 2016 Wojciech Koszek (home). All rights reserved.
 //
 
-#import "CoreDataTableViewController.h"
+#import "PhotosCDTVC.h"
 #import "Photographer.h"
 
-@interface PhotosByPhotographerCDTVCViewController : CoreDataTableViewController
+@interface PhotosByPhotographerCDTVC : PhotosCDTVC
 
 @property (nonatomic, strong) Photographer *photographer;
 
