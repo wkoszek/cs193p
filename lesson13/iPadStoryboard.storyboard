@@ -178,6 +178,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="7BH-2z-rVJ" kind="show" id="5Dt-sK-0K8"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -186,9 +189,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="AMt-HD-kxk"/>
-                    <connections>
-                        <segue destination="7BH-2z-rVJ" kind="show" identifier="Show Photos by Photographer" id="dyn-Ut-fzC"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hd1-o8-hgP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
