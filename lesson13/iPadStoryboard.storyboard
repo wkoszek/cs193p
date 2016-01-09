@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FYb-tc-iGc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -100,7 +100,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AiE-53-F3B">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AiE-53-F3B">
                                 <rect key="frame" x="20" y="28" width="560" height="552"/>
                             </scrollView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="rrw-Iq-qhJ">
@@ -110,12 +110,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="AiE-53-F3B" secondAttribute="bottom" constant="20" symbolic="YES" id="LeL-5l-Tnm"/>
-                            <constraint firstItem="AiE-53-F3B" firstAttribute="trailing" secondItem="0gT-hx-mds" secondAttribute="trailingMargin" id="dhY-Fv-qLd"/>
-                            <constraint firstItem="AiE-53-F3B" firstAttribute="top" secondItem="ugO-z2-2j0" secondAttribute="bottom" constant="8" symbolic="YES" id="fdv-lZ-Kj5"/>
+                            <constraint firstItem="AiE-53-F3B" firstAttribute="top" secondItem="0gT-hx-mds" secondAttribute="topMargin" constant="28" id="7S8-zw-ogf"/>
+                            <constraint firstItem="AiE-53-F3B" firstAttribute="centerX" secondItem="rrw-Iq-qhJ" secondAttribute="centerX" id="R5q-Gt-rbC"/>
+                            <constraint firstItem="AiE-53-F3B" firstAttribute="leading" secondItem="0gT-hx-mds" secondAttribute="leadingMargin" id="WCO-QK-1DY"/>
+                            <constraint firstAttribute="bottom" secondItem="AiE-53-F3B" secondAttribute="bottom" constant="20" symbolic="YES" id="ZzB-2a-yth"/>
                             <constraint firstItem="rrw-Iq-qhJ" firstAttribute="centerY" secondItem="0gT-hx-mds" secondAttribute="centerY" id="lnU-G5-gdn"/>
                             <constraint firstItem="rrw-Iq-qhJ" firstAttribute="centerX" secondItem="0gT-hx-mds" secondAttribute="centerX" id="mDC-Uj-kzA"/>
-                            <constraint firstItem="AiE-53-F3B" firstAttribute="leading" secondItem="0gT-hx-mds" secondAttribute="leadingMargin" id="rmL-ww-o6s"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KlZ-ee-uKA"/>
