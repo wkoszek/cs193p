@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5727638D1C42E878002A009B /* PhotosByPhotographerMapViewControlller.m in Sources */ = {isa = PBXBuildFile; fileRef = 5727638C1C42E878002A009B /* PhotosByPhotographerMapViewControlller.m */; };
 		574B71DB1C3925C6002BF726 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B71DA1C3925C6002BF726 /* main.m */; };
 		574B71DE1C3925C6002BF726 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B71DD1C3925C6002BF726 /* AppDelegate.m */; };
 		574B71E11C3925C6002BF726 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B71E01C3925C6002BF726 /* ViewController.m */; };
@@ -51,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5727638B1C42E878002A009B /* PhotosByPhotographerMapViewControlller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosByPhotographerMapViewControlller.h; sourceTree = "<group>"; };
+		5727638C1C42E878002A009B /* PhotosByPhotographerMapViewControlller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosByPhotographerMapViewControlller.m; sourceTree = "<group>"; };
 		574B71D61C3925C6002BF726 /* lesson13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lesson13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		574B71DA1C3925C6002BF726 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		574B71DC1C3925C6002BF726 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -185,6 +188,8 @@
 				7DF983971C40ACFB003312CE /* URLViewController.h */,
 				7DF983981C40ACFB003312CE /* URLViewController.m */,
 				574B71E21C3925C6002BF726 /* Main.storyboard */,
+				5727638B1C42E878002A009B /* PhotosByPhotographerMapViewControlller.h */,
+				5727638C1C42E878002A009B /* PhotosByPhotographerMapViewControlller.m */,
 				574B71E51C3925C6002BF726 /* Assets.xcassets */,
 				574B71E71C3925C6002BF726 /* LaunchScreen.storyboard */,
 				574B71EA1C3925C6002BF726 /* Info.plist */,
@@ -369,6 +374,7 @@
 			files = (
 				57657B191C3E164E00697B18 /* ImageViewController.m in Sources */,
 				574B723D1C39E525002BF726 /* Photographer+Create.m in Sources */,
+				5727638D1C42E878002A009B /* PhotosByPhotographerMapViewControlller.m in Sources */,
 				57657B1F1C3ED38500697B18 /* PhotosCDTVC.m in Sources */,
 				57657B1C1C3E1AD300697B18 /* PhotosByPhotographerCDTVC.m in Sources */,
 				574B722B1C39273E002BF726 /* Photo.m in Sources */,
