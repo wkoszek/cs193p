@@ -60,6 +60,24 @@
             </objects>
             <point key="canvasLocation" x="1932" y="272"/>
         </scene>
+        <!--Photos By Photographer Map View Controlller-->
+        <scene sceneID="UEv-cu-9t1">
+            <objects>
+                <viewController id="Yud-bv-cCW" customClass="PhotosByPhotographerMapViewControlller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lec-ri-OD7"/>
+                        <viewControllerLayoutGuide type="bottom" id="laH-XJ-w0j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oFl-kh-Uav">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TjG-Gh-FuS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1939" y="1113"/>
+        </scene>
         <!--Photographers-->
         <scene sceneID="NY7-MS-E5Y">
             <objects>
