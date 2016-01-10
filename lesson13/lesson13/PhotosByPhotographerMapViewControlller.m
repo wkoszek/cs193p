@@ -18,6 +18,25 @@
 
 @implementation PhotosByPhotographerMapViewControlller
 
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
+    static NSString *reuseId = @"PhotosByPhotographerMapViewControlller";
+    MKAnnotationView *view = [mapView dequeueReusableAnnotationViewWithIdentifier:reuseId];
+    if (!view) {
+        view = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:reuseId];
+        view.canShowCallout = YES;
+        UIImageView *iview = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 46, 46)];
+        view.leftCalloutAccessoryView = iview;
+        UIButton *button = [[UIButton alloc] init];
+        [button setBackgroundImage:[UIImage imageNamed:@"disclosure"] forState:UIControlStateNormal];
+        [button sizeToFit];
+        view.rightCalloutAccessoryView = button;
+    }
+    view.annotation = annotation;
+
+    return view;
+}
+
 - (void)updateMapViewAnnotations
 {
     [self.mapView removeAnnotations:self.mapView.annotations];
