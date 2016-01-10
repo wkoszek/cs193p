@@ -2,7 +2,7 @@
 //  Photo+CoreDataProperties.m
 //  lesson13
 //
-//  Created by Wojciech Koszek (home) on 1/3/16.
+//  Created by Wojciech Koszek (home) on 1/10/16.
 //  Copyright © 2016 Wojciech Koszek (home). All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -13,10 +13,13 @@
 
 @implementation Photo (CoreDataProperties)
 
-@dynamic title;
-@dynamic subtitle;
-@dynamic unique;
 @dynamic imageURL;
+@dynamic subtitle;
+@dynamic title;
+@dynamic unique;
+@dynamic thumbnailURL;
+@dynamic longitude;
+@dynamic latitude;
 @dynamic whoTook;
 
 @end
