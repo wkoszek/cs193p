@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5727638D1C42E878002A009B /* PhotosByPhotographerMapViewControlller.m in Sources */ = {isa = PBXBuildFile; fileRef = 5727638C1C42E878002A009B /* PhotosByPhotographerMapViewControlller.m */; };
 		5727638F1C42EA43002A009B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5727638E1C42EA43002A009B /* MapKit.framework */; };
+		572763921C42EEF9002A009B /* Photo+Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 572763911C42EEF9002A009B /* Photo+Annotation.m */; };
 		574B71DB1C3925C6002BF726 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B71DA1C3925C6002BF726 /* main.m */; };
 		574B71DE1C3925C6002BF726 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B71DD1C3925C6002BF726 /* AppDelegate.m */; };
 		574B71E11C3925C6002BF726 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B71E01C3925C6002BF726 /* ViewController.m */; };
@@ -56,6 +57,8 @@
 		5727638B1C42E878002A009B /* PhotosByPhotographerMapViewControlller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosByPhotographerMapViewControlller.h; sourceTree = "<group>"; };
 		5727638C1C42E878002A009B /* PhotosByPhotographerMapViewControlller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosByPhotographerMapViewControlller.m; sourceTree = "<group>"; };
 		5727638E1C42EA43002A009B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		572763901C42EEF9002A009B /* Photo+Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photo+Annotation.h"; sourceTree = "<group>"; };
+		572763911C42EEF9002A009B /* Photo+Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photo+Annotation.m"; sourceTree = "<group>"; };
 		574B71D61C3925C6002BF726 /* lesson13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lesson13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		574B71DA1C3925C6002BF726 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		574B71DC1C3925C6002BF726 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 				574B72261C39273E002BF726 /* Photographer+CoreDataProperties.h */,
 				574B722E1C3927FF002BF726 /* Photo+Flickr.h */,
 				574B722F1C3927FF002BF726 /* Photo+Flickr.m */,
+				572763901C42EEF9002A009B /* Photo+Annotation.h */,
+				572763911C42EEF9002A009B /* Photo+Annotation.m */,
 				574B72271C39273E002BF726 /* Photographer+CoreDataProperties.m */,
 				574B72281C39273E002BF726 /* Photographer.h */,
 				574B72291C39273E002BF726 /* Photographer.m */,
@@ -389,6 +394,7 @@
 				574B72461C39EB16002BF726 /* PhotographersCDTVC.m in Sources */,
 				574B722D1C39273E002BF726 /* Photographer.m in Sources */,
 				574B720E1C392636002BF726 /* Model.xcdatamodeld in Sources */,
+				572763921C42EEF9002A009B /* Photo+Annotation.m in Sources */,
 				574B72301C3927FF002BF726 /* Photo+Flickr.m in Sources */,
 				574B722A1C39273E002BF726 /* Photo+CoreDataProperties.m in Sources */,
 				7DF983991C40ACFB003312CE /* URLViewController.m in Sources */,
