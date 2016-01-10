@@ -20,7 +20,9 @@
 
 - (void)updateMapViewAnnotations
 {
-
+    [self.mapView removeAnnotations:self.mapView.annotations];
+    [self.mapView addAnnotations:self.photosByPhotographer];
+    [self.mapView showAnnotations:self.photosByPhotographer animated:YES];
 }
 
 - (void)setMapView:(MKMapView *)mapView
