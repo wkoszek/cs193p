@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Photographer.h"
 
 @interface PhotosByPhotographerMapViewControlller : UIViewController
 
