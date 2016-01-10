@@ -84,6 +84,9 @@
                             <constraint firstItem="n8X-FX-BOG" firstAttribute="trailing" secondItem="oFl-kh-Uav" secondAttribute="trailingMargin" id="gab-Pt-Aro"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="n8X-FX-BOG" id="slm-JK-pNn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TjG-Gh-FuS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
