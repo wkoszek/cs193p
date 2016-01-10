@@ -16,7 +16,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Photo Cell" textLabel="8cn-N8-cJC" detailTextLabel="jWq-5x-sFG" style="IBUITableViewCellStyleSubtitle" id="H55-t7-gdI">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H55-t7-gdI" id="10D-fk-OAk">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -90,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TjG-Gh-FuS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1939" y="1113"/>
+            <point key="canvasLocation" x="1896" y="1073"/>
         </scene>
         <!--Photographers-->
         <scene sceneID="NY7-MS-E5Y">
@@ -143,9 +143,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="wiY-4t-V6Z" kind="show" id="o3b-Ge-bow">
-                                        <nil key="action"/>
-                                    </segue>
+                                    <segue destination="Yud-bv-cCW" kind="show" id="Sxt-Dm-4zW"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
