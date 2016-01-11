@@ -33,6 +33,7 @@
         view.rightCalloutAccessoryView = button;
     }
     view.annotation = annotation;
+    [self updateLeftCalloutAccessoryViewInAnnotationView:view];
 
     return view;
 }
@@ -42,6 +43,24 @@
     [self.mapView removeAnnotations:self.mapView.annotations];
     [self.mapView addAnnotations:self.photosByPhotographer];
     [self.mapView showAnnotations:self.photosByPhotographer animated:YES];
+}
+
+- (void)updateLeftCalloutAccessoryViewInAnnotationView:(MKAnnotationView *)annotationView
+{
+    UIImageView *imageView = nil;
+    if ([annotationView.leftCalloutAccessoryView isKindOfClass:[UIImageView class]]) {
+        imageView = (UIImageView *)annotationView.leftCalloutAccessoryView;
+    }
+    if (imageView) {
+        Photo *photo = nil;
+        if ([annotationView.annotation isKindOfClass:[Photo class]]) {
+            photo = (Photo *)annotationView.annotation;
+        }
+        if (photo) {
+#warning Blocking main queue!
+            imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:photo.thumbnailURL]]];
+        }
+    }
 }
 
 - (void)setMapView:(MKMapView *)mapView
