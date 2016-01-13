@@ -14,10 +14,20 @@
 @interface PhotosByPhotographerMapViewControlller () <MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (nonatomic, strong) NSArray *photosByPhotographer;
+@property (nonatomic, strong) ImageViewController *imageViewController;
 
 @end
 
 @implementation PhotosByPhotographerMapViewControlller
+
+- (ImageViewController *)imageViewController
+{
+    id detailvc = [self.splitViewController.viewControllers lastObject];
+    if ([detailvc isKindOfClass:[UINavigationController class]]) {
+        detailvc = [((UINavigationController *)detailvc).viewControllers firstObject];
+    }
+    return [detailvc isKindOfClass:[ImageViewController class]] ? detailvc : nil;
+}
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
 {
@@ -46,7 +56,14 @@
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
 {
 
-    [self performSegueWithIdentifier:@"Show Photo" sender:view];
+    if (self.imageViewController) {
+        [self prepareViewController:self.imageViewController
+                           forSegue:nil
+                   toShowAnnotation:view.annotation];
+    } else {
+        [self performSegueWithIdentifier:@"Show Photo" sender:view];
+    }
+
 }
 
 - (void)prepareViewController:(id)vc
