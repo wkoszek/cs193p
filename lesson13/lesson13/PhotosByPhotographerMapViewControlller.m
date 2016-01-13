@@ -35,13 +35,15 @@
     MKAnnotationView *view = [mapView dequeueReusableAnnotationViewWithIdentifier:reuseId];
     if (!view) {
         view = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:reuseId];
-        view.canShowCallout = YES;
-        UIImageView *iview = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 46, 46)];
-        view.leftCalloutAccessoryView = iview;
-        UIButton *button = [[UIButton alloc] init];
-        [button setBackgroundImage:[UIImage imageNamed:@"disclosure"] forState:UIControlStateNormal];
-        [button sizeToFit];
-        view.rightCalloutAccessoryView = button;
+        if (!self.imageViewController) {
+            view.canShowCallout = YES;
+            UIImageView *iview = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 46, 46)];
+            view.leftCalloutAccessoryView = iview;
+            UIButton *button = [[UIButton alloc] init];
+            [button setBackgroundImage:[UIImage imageNamed:@"disclosure"] forState:UIControlStateNormal];
+            [button sizeToFit];
+            view.rightCalloutAccessoryView = button;
+        }
     }
     view.annotation = annotation;
 
@@ -50,20 +52,18 @@
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
 {
-    [self updateLeftCalloutAccessoryViewInAnnotationView:view];
-}
-
-- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
-{
-
     if (self.imageViewController) {
         [self prepareViewController:self.imageViewController
                            forSegue:nil
                    toShowAnnotation:view.annotation];
     } else {
-        [self performSegueWithIdentifier:@"Show Photo" sender:view];
+        [self updateLeftCalloutAccessoryViewInAnnotationView:view];
     }
+}
 
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
+{
+    [self performSegueWithIdentifier:@"Show Photo" sender:view];
 }
 
 - (void)prepareViewController:(id)vc
