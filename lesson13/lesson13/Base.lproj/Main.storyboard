@@ -72,7 +72,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="n8X-FX-BOG">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="n8X-FX-BOG">
                                 <rect key="frame" x="20" y="20" width="560" height="560"/>
                             </mapView>
                         </subviews>
@@ -86,6 +86,7 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="n8X-FX-BOG" id="slm-JK-pNn"/>
+                        <segue destination="NDE-PN-mSP" kind="show" identifier="Show Photo" id="Yae-oD-IGY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TjG-Gh-FuS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -242,4 +243,7 @@
             <point key="canvasLocation" x="3467" y="202"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Yae-oD-IGY"/>
+    </inferredMetricsTieBreakers>
 </document>
