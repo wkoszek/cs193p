@@ -29,6 +29,7 @@
 		574B72431C39EA14002BF726 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B72421C39EA14002BF726 /* CoreDataTableViewController.m */; };
 		574B72461C39EB16002BF726 /* PhotographersCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B72451C39EB16002BF726 /* PhotographersCDTVC.m */; };
 		574B72491C39F510002BF726 /* PhotomaniaAppDelegate+MOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 574B72481C39F510002BF726 /* PhotomaniaAppDelegate+MOC.m */; };
+		57634C511C46389E001CEC9D /* PhotosByPhotographerImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57634C501C46389E001CEC9D /* PhotosByPhotographerImageViewController.m */; };
 		57657B161C3E159C00697B18 /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57657B151C3E159C00697B18 /* iPadStoryboard.storyboard */; };
 		57657B191C3E164E00697B18 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57657B181C3E164E00697B18 /* ImageViewController.m */; };
 		57657B1C1C3E1AD300697B18 /* PhotosByPhotographerCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57657B1B1C3E1AD300697B18 /* PhotosByPhotographerCDTVC.m */; };
@@ -98,6 +99,8 @@
 		574B72471C39F510002BF726 /* PhotomaniaAppDelegate+MOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PhotomaniaAppDelegate+MOC.h"; sourceTree = "<group>"; };
 		574B72481C39F510002BF726 /* PhotomaniaAppDelegate+MOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PhotomaniaAppDelegate+MOC.m"; sourceTree = "<group>"; };
 		574B724A1C39FDC8002BF726 /* PhotoDatabaseAvailability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PhotoDatabaseAvailability.h; path = ../PhotoDatabaseAvailability.h; sourceTree = "<group>"; };
+		57634C4F1C46389E001CEC9D /* PhotosByPhotographerImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosByPhotographerImageViewController.h; sourceTree = "<group>"; };
+		57634C501C46389E001CEC9D /* PhotosByPhotographerImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosByPhotographerImageViewController.m; sourceTree = "<group>"; };
 		57657B151C3E159C00697B18 /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPadStoryboard.storyboard; path = ../iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		57657B171C3E164E00697B18 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		57657B181C3E164E00697B18 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
@@ -194,6 +197,8 @@
 				57657B1A1C3E1AD300697B18 /* PhotosByPhotographerCDTVC.h */,
 				57657B1B1C3E1AD300697B18 /* PhotosByPhotographerCDTVC.m */,
 				57657B151C3E159C00697B18 /* iPadStoryboard.storyboard */,
+				57634C4F1C46389E001CEC9D /* PhotosByPhotographerImageViewController.h */,
+				57634C501C46389E001CEC9D /* PhotosByPhotographerImageViewController.m */,
 				7DF983971C40ACFB003312CE /* URLViewController.h */,
 				7DF983981C40ACFB003312CE /* URLViewController.m */,
 				574B71E21C3925C6002BF726 /* Main.storyboard */,
@@ -401,6 +406,7 @@
 				574B723A1C39E23D002BF726 /* FlickrFetcher.m in Sources */,
 				574B72491C39F510002BF726 /* PhotomaniaAppDelegate+MOC.m in Sources */,
 				574B722C1C39273E002BF726 /* Photographer+CoreDataProperties.m in Sources */,
+				57634C511C46389E001CEC9D /* PhotosByPhotographerImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
