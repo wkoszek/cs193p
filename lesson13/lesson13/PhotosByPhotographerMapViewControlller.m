@@ -8,7 +8,7 @@
 
 #import "PhotosByPhotographerMapViewControlller.h"
 #import "MapKit/MapKit.h"
-#import "Photo.h"
+#import "Photo+Annotation.h"
 #import "ImageViewController.h"
 
 @interface PhotosByPhotographerMapViewControlller () <MKMapViewDelegate>
@@ -90,6 +90,15 @@
     [self.mapView removeAnnotations:self.mapView.annotations];
     [self.mapView addAnnotations:self.photosByPhotographer];
     [self.mapView showAnnotations:self.photosByPhotographer animated:YES];
+    if (self.imageViewController) {
+        Photo *autoselectedPhoto = [self.photosByPhotographer firstObject];
+        if (autoselectedPhoto) {
+            [self.mapView selectAnnotation:autoselectedPhoto animated:YES];
+            [self prepareViewController:self.imageViewController
+                               forSegue:nil
+                       toShowAnnotation:autoselectedPhoto];
+        }
+    }
 }
 
 - (void)updateLeftCalloutAccessoryViewInAnnotationView:(MKAnnotationView *)annotationView
