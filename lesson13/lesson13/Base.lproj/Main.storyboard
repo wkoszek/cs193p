@@ -60,7 +60,7 @@
             </objects>
             <point key="canvasLocation" x="1932" y="272"/>
         </scene>
-        <!--Photos By Photographer Map View Controlller-->
+        <!--Title-->
         <scene sceneID="UEv-cu-9t1">
             <objects>
                 <viewController id="Yud-bv-cCW" customClass="PhotosByPhotographerMapViewControlller" sceneMemberID="viewController">
@@ -78,13 +78,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="n8X-FX-BOG" firstAttribute="top" secondItem="Lec-ri-OD7" secondAttribute="bottom" id="Anw-6q-ENb"/>
                             <constraint firstItem="n8X-FX-BOG" firstAttribute="leading" secondItem="oFl-kh-Uav" secondAttribute="leadingMargin" id="LHz-jF-PS1"/>
-                            <constraint firstItem="n8X-FX-BOG" firstAttribute="top" secondItem="Lec-ri-OD7" secondAttribute="bottom" id="Sjp-Yq-g4I"/>
                             <constraint firstAttribute="bottom" secondItem="n8X-FX-BOG" secondAttribute="bottom" constant="20" symbolic="YES" id="bN3-Me-GQ3"/>
                             <constraint firstItem="n8X-FX-BOG" firstAttribute="trailing" secondItem="oFl-kh-Uav" secondAttribute="trailingMargin" id="gab-Pt-Aro"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="Ox3-4N-0eB">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="k4g-F9-R9J"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="addPhotoBarButtonItem" destination="k4g-F9-R9J" id="EEA-eZ-vnH"/>
                         <outlet property="mapView" destination="n8X-FX-BOG" id="slm-JK-pNn"/>
                         <segue destination="NDE-PN-mSP" kind="show" identifier="Show Photo" id="Yae-oD-IGY"/>
                     </connections>

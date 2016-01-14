@@ -10,11 +10,13 @@
 #import "MapKit/MapKit.h"
 #import "Photo+Annotation.h"
 #import "ImageViewController.h"
+#import "Photographer+Create.h"
 
 @interface PhotosByPhotographerMapViewControlller () <MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (nonatomic, strong) NSArray *photosByPhotographer;
 @property (nonatomic, strong) ImageViewController *imageViewController;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *addPhotoBarButtonItem;
 
 @end
 
@@ -141,8 +143,26 @@
     self.title = photographer.name;
     self.photosByPhotographer = nil;
     [self updateMapViewAnnotations];
+    [self updateAddPhotoBarButtonItem];
 }
 
+- (void) updateAddPhotoBarButtonItem
+{
+    if (self.addPhotoBarButtonItem) {
+        BOOL canAddPhoto = self.photographer.isUser;
+        NSMutableArray *rightBarButtonItems = [self.navigationItem.rightBarButtonItems mutableCopy];
+        if (!rightBarButtonItems) rightBarButtonItems = [[NSMutableArray alloc] init];
+        NSUInteger addPhotoBarButtonItemIndex = [rightBarButtonItems indexOfObject:self.addPhotoBarButtonItem];
+        if (addPhotoBarButtonItemIndex == NSNotFound) {
+            if (canAddPhoto) [rightBarButtonItems addObject:self.addPhotoBarButtonItem];
+        } else {
+            if (!canAddPhoto) {
+                [rightBarButtonItems removeObjectAtIndex:addPhotoBarButtonItemIndex];
+            }
+        }
+        self.navigationItem.rightBarButtonItems = rightBarButtonItems;
+    }
+}
 
 
 - (NSArray *) photosByPhotographer
