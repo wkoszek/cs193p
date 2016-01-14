@@ -10,6 +10,16 @@
 
 @implementation Photographer (Create)
 
++ (Photographer *)userInManagedObjectContext:(NSManagedObjectContext *)context
+{
+    return [self photographerWithName:@" My Photos" inManagerObjectContext:context];
+}
+
+- (BOOL)isUser
+{
+    return self == [[self class] userInManagedObjectContext:self.managedObjectContext];
+}
+
 + (Photographer *)photographerWithName:(NSString *)name
         inManagerObjectContext:(NSManagedObjectContext *)context
 {
