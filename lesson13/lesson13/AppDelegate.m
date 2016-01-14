@@ -11,6 +11,7 @@
 #import "FlickrFetcher.h"
 #import "Photo+Flickr.h"
 #import "PhotoDatabaseAvailability.h"
+#import "Photographer+Create.h"
 
 @interface AppDelegate () <NSURLSessionDownloadDelegate>
 @property (copy, nonatomic) void (^flickrDownloadBackgroundURLSessionCompletionHandler)();
@@ -107,6 +108,9 @@ totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite
 
     _photoDatabaseContext = photoDatabaseContext;
 
+    if (photoDatabaseContext) {
+        [Photographer userInManagedObjectContext:photoDatabaseContext];
+    }
 
     [NSTimer scheduledTimerWithTimeInterval:20*60
                                      target:self
