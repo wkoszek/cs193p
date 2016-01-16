@@ -11,6 +11,7 @@
 #import "Photo+Annotation.h"
 #import "ImageViewController.h"
 #import "Photographer+Create.h"
+#import "AddPhotoViewController.h"
 
 @interface PhotosByPhotographerMapViewControlller () <MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
@@ -121,9 +122,27 @@
     }
 }
 
+- (IBAction)addedPhoto:(UIStoryboardSegue *)segue
+{
+    if ([segue.sourceViewController isKindOfClass:[AddPhotoViewController class]]){
+        AddPhotoViewController *apvc = (AddPhotoViewController *)segue.sourceViewController;
+        Photo *addedPhoto = apvc.addedPhoto;
+        if (addedPhoto) {
+            [self.mapView addAnnotation:addedPhoto];
+            [self.mapView showAnnotations:@[addedPhoto] animated:YES];
+            self.photosByPhotographer = nil;
+        } else {
+            NSLog(@"AddPhotoViewController didn't add photo!!!!");
+        }
+    }
+}
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([sender isKindOfClass:[MKAnnotationView class]]) {
+    if ([segue.destinationViewController isKindOfClass:[AddPhotoViewController class]]) {
+        AddPhotoViewController *avc = (AddPhotoViewController *)segue.destinationViewController;
+        avc.photographerTakingPhoto = self.photographer;
+    } else if ([sender isKindOfClass:[MKAnnotationView class]]) {
         [self prepareViewController:segue.destinationViewController
                            forSegue:segue.identifier
                    toShowAnnotation:((MKAnnotationView *)sender).annotation];

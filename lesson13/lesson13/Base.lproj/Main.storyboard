@@ -125,6 +125,7 @@
                                 <state key="normal" title="Done"/>
                                 <connections>
                                     <action selector="done" destination="xhP-Ev-RQ8" eventType="touchUpInside" id="IqH-xa-v6V"/>
+                                    <segue destination="DwL-z6-j9c" kind="unwind" identifier="Do Add Photo" unwindAction="addedPhoto:" id="31n-zW-k6e"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZs-Y7-PsH">
@@ -200,6 +201,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qti-dd-iS5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="DwL-z6-j9c" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2855.5" y="1656.5"/>
         </scene>
