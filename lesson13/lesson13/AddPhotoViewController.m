@@ -17,6 +17,13 @@
 
 @implementation AddPhotoViewController
 
+- (BOOL) textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+
+    return YES;
+}
+
 - (void)setImage:(UIImage *)image
 {
     self.imageView.image = image;
