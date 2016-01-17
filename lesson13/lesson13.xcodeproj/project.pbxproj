@@ -34,6 +34,7 @@
 		57657B191C3E164E00697B18 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57657B181C3E164E00697B18 /* ImageViewController.m */; };
 		57657B1C1C3E1AD300697B18 /* PhotosByPhotographerCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57657B1B1C3E1AD300697B18 /* PhotosByPhotographerCDTVC.m */; };
 		57657B1F1C3ED38500697B18 /* PhotosCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 57657B1E1C3ED38500697B18 /* PhotosCDTVC.m */; };
+		577DC8E91C4B3CE900FA02B7 /* UIImage+CS193p.m in Sources */ = {isa = PBXBuildFile; fileRef = 577DC8E81C4B3CE900FA02B7 /* UIImage+CS193p.m */; };
 		57AD36701C479695000C331D /* AddPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AD366F1C479695000C331D /* AddPhotoViewController.m */; };
 		7DF983991C40ACFB003312CE /* URLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF983981C40ACFB003312CE /* URLViewController.m */; };
 /* End PBXBuildFile section */
@@ -109,6 +110,8 @@
 		57657B1B1C3E1AD300697B18 /* PhotosByPhotographerCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosByPhotographerCDTVC.m; sourceTree = SOURCE_ROOT; };
 		57657B1D1C3ED38500697B18 /* PhotosCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosCDTVC.h; sourceTree = "<group>"; };
 		57657B1E1C3ED38500697B18 /* PhotosCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosCDTVC.m; sourceTree = "<group>"; };
+		577DC8E71C4B3CE000FA02B7 /* UIImage+CS193p.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIImage+CS193p.h"; path = "../../../../Users/wk/.Trash/UIImage+CS193p/UIImage+CS193p.h"; sourceTree = "<group>"; };
+		577DC8E81C4B3CE900FA02B7 /* UIImage+CS193p.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CS193p.m"; path = "../../../../Users/wk/.Trash/UIImage+CS193p/UIImage+CS193p.m"; sourceTree = "<group>"; };
 		57AD366E1C479695000C331D /* AddPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPhotoViewController.h; sourceTree = "<group>"; };
 		57AD366F1C479695000C331D /* AddPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPhotoViewController.m; sourceTree = "<group>"; };
 		7DF983971C40ACFB003312CE /* URLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLViewController.h; sourceTree = "<group>"; };
@@ -168,6 +171,8 @@
 				574B72291C39273E002BF726 /* Photographer.m */,
 				57657B171C3E164E00697B18 /* ImageViewController.h */,
 				57657B181C3E164E00697B18 /* ImageViewController.m */,
+				577DC8E71C4B3CE000FA02B7 /* UIImage+CS193p.h */,
+				577DC8E81C4B3CE900FA02B7 /* UIImage+CS193p.m */,
 				574B71D81C3925C6002BF726 /* lesson13 */,
 				574B71F21C3925C6002BF726 /* lesson13Tests */,
 				574B71FD1C3925C6002BF726 /* lesson13UITests */,
@@ -394,6 +399,7 @@
 				57657B191C3E164E00697B18 /* ImageViewController.m in Sources */,
 				574B723D1C39E525002BF726 /* Photographer+Create.m in Sources */,
 				5727638D1C42E878002A009B /* PhotosByPhotographerMapViewControlller.m in Sources */,
+				577DC8E91C4B3CE900FA02B7 /* UIImage+CS193p.m in Sources */,
 				57657B1F1C3ED38500697B18 /* PhotosCDTVC.m in Sources */,
 				57657B1C1C3E1AD300697B18 /* PhotosByPhotographerCDTVC.m in Sources */,
 				574B722B1C39273E002BF726 /* Photo.m in Sources */,
