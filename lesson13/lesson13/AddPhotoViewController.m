@@ -9,8 +9,10 @@
 #import "AddPhotoViewController.h"
 #import "Photo.h"
 #import "MapKit/MapKit.h"
+@import MobileCoreServices;
 
-@interface AddPhotoViewController () <UITextFieldDelegate>
+
+@interface AddPhotoViewController () <UITextFieldDelegate, UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 @property (weak, nonatomic) IBOutlet UITextField *subtitleTextField;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -23,6 +25,28 @@
 @end
 
 @implementation AddPhotoViewController
+
++ (BOOL)canAddPhoto
+{
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        NSArray *availableMediaTypes = [UIImagePickerController availableMediaTypesForSourceType:UIImagePickerControllerSourceTypeCamera];
+        if ([availableMediaTypes containsObject:(NSString *)kUTTypeImage]) {
+            if ([CLLocationManager authorizationStatus] != kCLAuthorizationStatusRestricted) {
+                return YES;
+            }
+        }
+    }
+    return NO;
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+
+    if (![[self class] canAddPhoto]) {
+        [self fatalAlert:@"This device can't add photo"];
+    }
+}
 
 - (BOOL) textFieldShouldReturn:(UITextField *)textField
 {
@@ -79,6 +103,20 @@
                               delegate:nil
                      cancelButtonTitle:nil
                       otherButtonTitles:@"OK", nil] show];
+}
+
+- (void)fatalAlert:(NSString *)msg
+{
+    [[[UIAlertView alloc] initWithTitle:@"Add photo"
+                                message:msg
+                               delegate:self
+                      cancelButtonTitle:nil
+                      otherButtonTitles:@"OK", nil] show];
+}
+
+- (void) alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    [self cancel];
 }
 
 - (void)setImage:(UIImage *)image
